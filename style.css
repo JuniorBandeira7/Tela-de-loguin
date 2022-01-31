@@ -10,89 +10,81 @@ body {
     justify-content: center;
 }
 section{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: column;
-  width: 50%;
-  height: 70%;
-  background: #020b22d9;
-  border-radius: 20px;
-  box-shadow: -1px 1px 15px, 10px 10px 10px; 
+display: flex;
+justify-content: center;
+align-items: center;
+flex-flow: column;
+width: 50%;
+height: 70%;
+background: #020b22d9;
+border-radius: 20px;
+box-shadow: -1px 1px 15px, 10px 10px 10px; 
 }
 h2{
-  color: #29FF00;
-  margin-bottom: 150px;
+color: #ffffff;
+margin-bottom: 150px;
 }
 #escrever{
-  margin-bottom: 40px;
-  font-size: 20px;
-  width: 50%;
-  background: none;
-  color: white;
-  border: none;
-  border-bottom: 1px solid;
-  outline: 0;
+margin-bottom: 40px;
+font-size: 20px;
+width: 50%;
+background: none;
+color: white;
+border: none;
+border-bottom: 1px solid;
+outline: 0;
+transition: 1s;
+}
+#escrever:focus{
+font-size: 25px;
+transition: 1s;
+}
+label{
+color: rgb(212, 212, 247);
+}
+#botao{
+width: 25%;
+height: 40px;
+border-radius: 15px;
+opacity: 80%;
+color: #fafafa;
+margin-left: 10px;
+background:#020b22d9;
+}
+div{
+display: flex;
+justify-content: center;
+flex-flow: column;
+align-items: center;
+width: 100%
+}
+#divbotao{
+display: flex;
+flex-direction: row;
+}
+a{
+color: white;
+text-decoration: none;
+margin-top: 30px;
+}
+@media(max-width: 1024px){
+section{
+  width: 90%;
+}
+#escrever{
+  font-size: 16px;
   transition: 1s;
+  width: 70%
 }
 #escrever:focus{
   font-size: 25px;
   transition: 1s;
+  width: 90%;
 }
-label{
-  color: rgb(212, 212, 247);
+#section-div{
+    margin-bottom: 10%;
 }
-#botao{
-  width: 25%;
-  height: 40px;
-  border-radius: 15px;
-  opacity: 80%;
-  background: #051648;
-  color: white;
-  margin-left: 10px;
+h2{
+    margin-bottom: 10%;
 }
-div{
-  display: flex;
-  justify-content: center;
-  flex-flow: column;
-  align-items: center;
-  width: 100%
-}
-#divbotao{
-  display: flex;
-  flex-direction: row;
-}
-a{
-  color: white;
-  text-decoration: none;
-  margin-top: 30px;
-}
-@media(max-height: 721px){
-  section{
-    width: 70%;
-    margin-left: 15%;
-  }
-  #escrever{
-    font-size: 16px;
-    transition: 1s;
-  }
-  #escrever:focus{
-    font-size: 25px;
-    transition: 1s;
-    width: 70%;
-  }
-  div{
-    margin-top: -10%;
-    position: absolute;
-  }
-  h2{
-    position: absolute;
-    margin-bottom: 100%;
-  }
-  #divbotao{
-    margin-top: 60%;
-  }
-  a{
-    margin-top: 150%;
-  }
 }
