@@ -1,4 +1,8 @@
-body {
+body{
+  margin: 0;
+  padding: 0;
+}
+#body {
     font-size: 15pt;
     background-image: url(sky-purple-violet-atmosphere-blue-galaxy-1564065-pxhere.com\ \(1\).png);
     margin: 0px;
